@@ -1,0 +1,323 @@
+body
+	background: #f4f4f4
+	color: #333
+	line-height: 1.7
+	font-size: 16px
+	font-family: $primary-font
+	letter-spacing: 0.025rem
+	overflow-x: hidden
+
+ul, li
+	list-style: none
+	padding: 0
+	margin: 0
+	display: inline
+
+h1
+	color: #545454
+	font-size: 2em
+	text-transform: uppercase
+	font-family: $secondary-font
+
+
+p
+	font-size: 1.09em
+
+
+.btn
+	text-transform: uppercase
+	font-size: .9em
+	font-weight: 600
+
+.btn-primary:hover, .btn-success:hover
+	color: #fff
+	background: $brand-success
+	border: $brand-success
+
+.navbar
+	margin-bottom: 0px
+
+	.navbar-brand
+		font-size: 1.2em
+		text-transform: uppercase
+
+	a
+		text-transform: uppercase
+	    color: set-text-color($brand-primary) !important
+	    font-family: $secondary-font !important
+
+	li
+	    text-align: center
+
+	.underline
+		font-size: .8em
+		font-weight: 600
+
+	li:hover a .underline
+		border-bottom: 4px solid $brand-success
+		padding: 8px 0
+
+	.logo-color
+		color: $brand-success
+
+.main-section
+	background: linear-gradient(rgba(0,0,0,0.80), rgba(0,0,0,0.80)), url('../img/devcode.jpeg')
+	min-height: 635px
+	padding: 30px 0
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	background-attachment: fixed
+	
+
+	.container
+		background: transparent
+		color: set-text-color($brand-primary)
+		margin-top: 110px
+		padding: 35px 30px 40px 30px
+		border-radius: 2px
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+
+		@media screen and (max-width: $break-medium)
+			flex-flow: column wrap
+			text-align: center
+			margin-top: 70px
+
+	.info
+		+make-md-column(8)
+
+	.main-left
+		padding: 22px 0
+
+
+	h1
+		font-size: 2.8em
+		font-weight: 600
+		font-family: $primary-font
+		letter-spacing: .03em
+
+	p
+		font-size: 1.21em
+
+	span
+		font-weight: 900
+		color: darken($brand-success, 12%)
+
+	a:hover, a:active
+		text-decoration: none
+
+	img
+		border-radius: 100%
+		width: 220px
+		height: auto
+
+	a
+		margin-top: 15px
+
+.section-skills
+	padding: 30px 0
+
+	.section-title
+		border-bottom: 4px solid $brand-success
+		padding: 10px
+
+	.row
+		padding: 35px 10px
+
+	h1
+		margin-bottom: 25px
+
+	.skill-logo
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-around
+		@media (max-width: $screen-sm-min)
+			text-align: center
+
+	.skill-left, .skill-right
+		+make-md-column(6)
+		+make-sm-column(6)
+		@media (max-width: $screen-md-min)
+			text-align: center
+		
+	@media (max-width: $screen-xs-min)
+		.logo
+			padding: 10px
+
+		.skill-logo	
+			flex-flow: column wrap
+			margin: 30px 0
+		.row
+			padding: 30px 10px 0 10px
+
+	@media (max-width: $screen-md-min)
+		.row
+			padding: 35px 10px 0 10px
+
+		.skill-logo
+			margin-top: 40px
+			margin-bottom: 40px
+
+
+.section-projects
+	+add-border(15px, #c8c9c9, top-bottom)
+	padding: 30px 10px
+	background: $brand-danger
+
+	.section-title
+		border-bottom: 4px solid #fff
+		padding: 10px
+
+	.container
+		padding: 30px 0 30px 0
+
+	ul
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-around
+
+	li
+		margin: 10px 5px
+		background: #000
+
+
+	a
+		position: relative
+		display: block
+		overflow: hidden
+
+		img
+			width: 340px
+			height: 240px
+
+		&:hover img
+			opacity: .3
+			transform: scale(1.2)
+
+
+		.caption
+			box-sizing: border-box
+			position: absolute
+			display: none
+			top: 35%
+			left: 0
+			width: 340px
+			padding: 25px 0px
+			
+		&:hover .caption
+			display: inline
+			
+		h3
+			padding: 0
+			margin: 0
+
+
+	h1, .caption
+		color: set-text-color($brand-danger)
+		margin-bottom: 25px
+
+.modal 
+	h2
+		padding-top: 0
+		margin-top: 0
+		font-weight: 400
+		font-size: 1.8em
+		font-family: $secondary-font
+		color: #545454
+
+	h3
+		font-weight: 400
+		font-family: $secondary-font
+		color: #545454
+		font-size: 1.29em
+		text-transform: uppercase
+		@media only screen and (max-width: $break-small)
+			font-size: 1.2em
+
+
+	p
+		margin: 16px 0 
+
+	.body-content
+	    max-height: 300px
+	    overflow-y: scroll
+
+	a
+		color: #fff
+
+		&:hover, &:active, &:visited, &:link
+			text-decoration: none
+
+	.modal-footer
+		background: $brand-primary
+
+
+.section-education
+	background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('../img/devenv.jpeg')
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	background-attachment: fixed
+	padding: 25px 0
+	opacity: .9
+	
+	.section-title
+		border-bottom: 4px solid $brand-success
+		padding: 10px
+
+
+	.info
+		color: set-text-color(#222)
+		border-radius: 2px
+		padding: 10px
+
+		.education-info
+			margin-top: 30px
+
+		h1
+			color: set-text-color(#222)
+			margin-bottom: 25px
+
+		em
+			color: $brand-success
+			font-size: 1.09em
+
+		h2
+			margin-top: 10px
+			font-size: 1.54em
+			text-transform: uppercase
+
+		h4, h5
+			margin-bottom: 5px
+
+		.line
+			text-decoration: line-through
+
+
+	img
+		padding: 10px
+
+.section-social
+	padding: 25px 0
+	background: #222
+	span
+		font-size: .8em
+		color: $brand-success
+		font-family: $secondary-font
+		text-transform: uppercase
+		letter-spacing: .09em
+
+	.fa
+		font-size: 2.5em
+		color: set-text-color(#222)
+		padding: 15px 15px
+
+		&:hover
+			color: $brand-success
+
+	a:hover
+		text-decoration: none
+
+

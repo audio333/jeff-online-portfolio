@@ -1,10 +1,8 @@
-/**
- * Variables overrides
- */
-$font-family-sans-serif:  'Open Sans', sans-serif;
-$font-family-serif:       'Roboto Slab', serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
 
-/**
- * Import Bootstrap
- */
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "customVariables";
+@import "functions";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-compass";
+@import "../../bower_components/font-awesome/scss/font-awesome";
+@import "custom";
