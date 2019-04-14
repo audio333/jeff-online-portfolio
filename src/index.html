@@ -1,18 +1,362 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-    <head>
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/app.css">
-        <title>Bootstrap Sass Starter Pack</title>
-    </head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Front End Web Developer.">
+    <meta name="keywords" http-equiv="keywords" content="front-end, back-end, web developer, web development">
+    <link rel="canonical" href="http://www.jeffreybalmes.cf">
+    <meta property="og:title" content="Portfolio | Jeffrey Balmes">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.jeffreybalmes.cf">
+    <link rel="icon" type="image/gif/png/" href="img/j.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <title>Portfolio | Jeffrey Balmes</title>
+  </head>
 
-    <body>
-    <h1>My Bootstrap Sass Starter Pack</h1>
-        
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#about"><<strong class="first"> Jeffrey</strong><span class="logo-color">Balmes</span> /></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#about"><span class="underline">About Me</span></a></li>
+            <li><a href="#skills"><span class="underline">Skills</span></a></li>
+            <li><a href="#portfolio"><span class="underline">Projects</span></a></li>
+            <li><a href="#education"><span class="underline">Education</span></a></li>
+            <li><a href="#contact"><span class="underline">Contact</span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    </body>
+    <div class="main-section" id="about">
+        <div class="jumbotron container">
+            <div class="main-left photo">
+                <img src="img/primary_photo_1.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="main-right">
+                    <h1>Hello, I'm Jeff!</h1>
+                    <hr align="left">
+                    <p>Welcome to my portfolio! On this page you can find several projects I've done to my previous company.</p>
+                    <p>I enjoy building application using the <a href="#skills"><span>technologies</span></a> below. I am constantly pursuing my passion to learn technologies in order to become a developer.</p>
+                </div>
+                <p>
+                    <a class="btn btn-primary btn-lg" href="#contact">Get in touch</a>
+                </p>
+            </div>
+        </div>
+    </div> <!-- /.main-section -->
+
+    <div class="section-skills clearfix" id="skills">
+        <h1 class="text-center"><span class="section-title">Skills</span></h1>
+        <div class="container">
+            <div class="row">
+                <div class="skill-left">
+                    <p>Learning the fundamentals of HTML, CSS, and JavaScript, the three common coding languages on which all modern websites are built, gave me the skills required to build layouts obtaining an eye for details, and appreciation for design.</p>
+                </div>
+                <div class="skill-right skill-logo text-center">
+                    <div class="logo">
+                        <img src="img/html5.png" alt="HTML5" height="90" width="90">
+                        <br><strong>HTML5</strong>
+                    </div>
+                    <div class="logo">
+                        <img src="img/css3.png" alt="CSS3" height="90" width="90">
+                        <br><strong>CSS3</strong>
+                    </div>
+                    <div class="logo">
+                        <img src="img/javascript.png" alt="JavaScript" height="90" width="90">
+                        <br><strong>JavaScript</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="skill-left skill-logo text-center">
+                    <div class="logo text-center">
+                        <img src="img/bootstrap.png" alt="HTML5" height="90" width="90">
+                        <br><strong>Bootstrap</strong>
+                    </div>
+                    <div class="logo text-center">
+                        <img src="img/sass.svg" alt="CSS3" height="90" width="90">
+                        <br><strong>SASS</strong>
+                    </div>
+                    <div class="logo text-center">
+                        <img src="img/jquery.png" alt="JavaScript" height="90" width="90">
+                        <br><strong>JQuery</strong>
+                    </div>
+                </div>
+                <div class="skill-right">
+                    <p>Creating interactive, and responsive layouts that allow the user to experience it in the best way suited to the device they are using, making best use of the space available on the smallest to the largest devices.
+
+My building process involves also the use of the CSS preprocessor Sass, to speed up, and cut short my code.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="skill-left">
+                    <p>Able to write dynamically generated web pages using PHP server-side scripting language integrated with MySQL for managing content in a database. Storing file changes by creating a new Git repository, commit changes and push it into GitHub.</p>
+                </div>
+                <div class="skill-right skill-logo text-center">
+                    <div class="logo text-center">
+                        <img src="img/php2.png" alt="PHP" height="90" width="90">
+                        <br><strong>PHP</strong>
+                    </div>
+                    <div class="logo text-center">
+                        <img src="img/mysql.png" alt="MySQL" height="90" width="90">
+                        <br><strong>MySQL</strong>
+                    </div>
+                    <div class="logo text-center">
+                        <img src="img/git.png" alt="Git" height="90" width="90">
+                        <br><strong>Git</strong>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> <!-- /.section-skills -->
+
+    <div class="section-projects text-center" id="portfolio">
+        <h1><span class="section-title">Projects</span></h1>
+        <div class="container">
+            <ul class="projects">
+                <li>
+                    <a data-toggle="modal" href="#modal-journal">
+                        <img src="img/journal_main.jpg" alt="e-Journal">
+                        <span class="caption">
+                            <h3>e-Journal</h3>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="modal" href="#modal-report">
+                        <img src="img/report_main.jpg" alt="e-Report">
+                        <span class="caption">
+                            <h3>e-Report</h3>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="modal" href="#modal-ojt">
+                        <img src="img/ojt_main.jpg" alt="OJT">
+                        <span class="caption">
+                            <h3>OJT App</h3>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-journal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="carousel-journal" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img alt="reports" src="img/journal_main.jpg">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h3>Reports</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img alt="losses" src="img/journal_graph.jpg">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h3>Losses</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img alt="facilities" src="img/journal_facilities.jpg">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h3>Facilities</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel-journal" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                        <a class="right carousel-control" href="#carousel-journal" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <h2>e-Journal</h2>
+                    <ul>
+                        <li><span class="label label-success">VB6</span></li>
+                        <li><span class="label label-success">MS Access</span></li>
+                    </ul>
+                    <div class="body-content">
+                        <p>The application I used to monitor the daily activities in my area of responsibilities. The purpose of this program are as follows: </p>
+                        <ul>
+                            <li class="list-group-item">To have a database where I can save all the reports so I can easily search it when it's needed.</li>
+                            <li class="list-group-item">To identify which town(s) have the highest no. of theft incident in our area so we can deploy SRF (Security Response Force) to apprehend the suspect(s) / to secure the area.</li>
+                            <li class="list-group-item">To view history of each facility. So incase there's an incident happened to a particular facility, we have a basis / reference for our investigation report.</li>
+                            <!-- <li class="list-group-item">To view the no. of accomplishments.</li> -->
+                            <li class="list-group-item">To monitor the performance of every SRF / Cluster Roving Guards.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modal-report">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="carousel-report" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img alt="sent" src="img/report_sent.jpg">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h3>Input</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="text-center" alt="layout" src="img/report_layout.jpg">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h3>Output</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="left carousel-control" href="#carousel-report" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                        <a class="right carousel-control" href="#carousel-report" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <h2>e-Report</h2>
+                    <ul>
+                        <li><span class="label label-success">PHP</span></li>
+                        <li><span class="label label-success">MS Access</span></li>
+                        <li><span class="label label-success">JQuery / AJAX</span></li>
+                        <li class="pull-right"><span class="badge"><a href="https://github.com/jeffreybalmes/e-Reports" target="_blank"><i class="fa fa-github"></i>&nbsp;GitHub</a></span></li>
+                    </ul>
+                    <div class="body-content">
+                        <p>In compliance with security protocol, all urgent reports should be immediately addressed to every concerned division. Thus, I developed this application for fast and easy sending of informations. It have (2) templates, for inspection and incident reports. This serves as extension for e-Journal since both apps are using same database.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-ojt">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="carousel-ojt" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img alt="sent" src="img/ojt_main.jpg">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h3>Masterlist</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="text-center" alt="layout" src="img/ojt_form.jpg">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h3>Form</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="text-center" alt="layout" src="img/ojt_id.jpg">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h3>ID Layout</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel-ojt" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                        <a class="right carousel-control" href="#carousel-ojt" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <h2>OJT App</h2>
+                    <ul>
+                        <li><span class="label label-success">PHP</span></li>
+                        <li><span class="label label-success">MySQL</span></li>
+                        <li><span class="label label-success">JQuery / AJAX</span></li>
+                        <li class="pull-right"><span class="badge"><a href="https://github.com/jeffreybalmes/ojtapp" target="_blank"><i class="fa fa-github"></i>&nbsp;GitHub</a></span></li>
+                    </ul>
+                    <div class="body-content">
+                        <p>A simple application with CRUD (create, read, update & delete) functionality, where all informations of OJT were stored in a database. It also have ID layout for printing purposes. </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section-education text-center" id="education">
+        <div class="container">
+            <div class="info">
+                <h1><span class="section-title">Education</span></h1>
+                <div class="education-info">
+                    <img src="img/bsu.png" alt="Batangas State University" width="140px" height="140px">
+                    <h2>Batangas State University</h2>
+                    <h4 class="primary">Bachelor of Industrial Technology</h4>
+                    <em>Major in Computer Technology</em>
+                    <h5>2008-2012</h5>
+                    <br>
+                    <h4 class="line">Bachelor of Science in Architecture</h4>
+                    <h5 class="line">2004-2008</h5>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /.section-education -->
+
+     <footer class="section-social" id="contact"> 
+      <div class="container text-center">
+        <div>
+          <ul>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+            <li><a href="https://github.com/jeffreybalmes" target="_blank"><i class="fa fa-github-square"></i></a></li>
+            <li><a href="mailto:jefbalmes@gmail.com"><i class="fa fa-envelope-square"></i></a></li>
+          </ul>
+        </div>
+        <div>
+          <a href="http://www.jeffreybalmes.cf"><span>&copy; 2017 Jeffrey Balmes</span></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
